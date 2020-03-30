@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#back1{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#overlay1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+
+#back1 h1{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 8px;
+    font-weight: 900;
+    font-size: 60px;
+    color: rgba(255, 250, 250, 0.705);
+    /* animation: glow 1s ease-in-out infinite alternate !important; */
+    
+}
+ 
+#shaker{
+    background-color: transparent;
+}
+
+#shaker:hover{
+    animation: shake .5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+#topnav{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+button{
+    border-radius: 50px;
+    padding: 7px 20px;
+    text-align: center;
+    font-family: 'Montserrat';
+    border: 0 solid transparent;
+    background-color: black;
+    color: rgba(255, 250, 250, 0.705);
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 650;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 250, 250, 0.705);
+    color: black;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#topnav h2{
+    font-size:25px;
+    letter-spacing: 3px;
+    color: rgba(255, 250, 250, 0.705);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#bottomnav{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 5px;
+    width: 100%;
+    background-color: transparent;
+    color: rgba(255, 250, 250, 0.705);
+}
+
+.text{
+    border: o solid transparent;
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin-right: 25px;
+    font-size: 18px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 400;
+}
+
+.text:hover{
+    cursor: pointer;
+    border: 0 solid transparent;
+    background-color: rgba(0, 0, 0, 0.322);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#overlay2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+
+#one:hover{
+    cursor: pointer;
+    color: rgb(182, 116, 116);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#two:hover{
+    cursor: pointer;
+    color: rgb(182, 181, 116);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#three:hover{
+    cursor: pointer;
+    color: rgb(151, 182, 116);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#four:hover{
+    cursor: pointer;
+    color: rgb(116, 182, 151);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#five:hover{
+    cursor: pointer;
+    color: rgb(116, 172, 182);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#six:hover{
+    cursor: pointer;
+    color: rgb(116, 139, 182);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#seven:hover{
+    cursor: pointer;
+    color: rgb(158, 116, 182);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#eight:hover{
+    cursor: pointer;
+    color: rgb(182, 116, 173);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#nine:hover{
+    cursor: pointer;
+    color: rgb(182, 116, 136);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#ten:hover{
+    cursor: pointer;
+    color: rgb(182, 116, 116);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#back2{
+ display: flex;
+ flex-direction: column;
+ justify-content: center; 
+ align-items: center;  
+ width: 100%;
+ height: 100%;
+ background-color: rgb(0, 0, 0);
+ color: rgba(255, 250, 250, 0.705);
+}
+
+#back2 h3{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 15px ;
+    font-size: 30px;
+}
+#btext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    width: 80%;
+    height: 60%;
+    background-color: transparent;
+}
+
+#bp{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 0 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgba(255, 250, 250, 0.705);
+}
+
+#back3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1480057261736-36852db40e50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);    
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+#glowtxt{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: rgba(255, 250, 250, 0.705);
+    font-weight: 450;
+    letter-spacing: 4px;
+    margin-top: 40px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+ @keyframes glow{ 
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(233, 158, 19), 0 0 20px rgb(233, 158, 19), 0 0 25px rgb(233, 158, 19), 0 0 30px rgb(233, 158, 19), 0 0 35px rgb(233, 158, 19);
+      }
+      
+      to {
+        text-shadow: 0 0 15px #fff, 0 0 20px rgb(255, 192, 74), 0 0 25px rgb(255, 192, 74), 0 0 30px rgb(255, 192, 74), 0 0 35px rgb(255, 192, 74), 0 0 40px rgb(255, 192, 74), 0 0 45px #4df9ff;     
+      }
+    } 
+
+#opts{
+    margin-top: 30px;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: orange; */
+}
+
+.o1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(255, 250, 250, 0.705);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+.o1:hover{
+    color:rgb(255, 192, 74) ;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.o1p{
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+#person{
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translate(-50% , 0);
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-image: url(https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-position: center;
+}
+
+#comment{
+    margin-top: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , 0);
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: rgba(255, 250, 250, 0.705);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    width: 200px;
+    height: 300px;
+    /* background-color: rosybrown;    */
+}
+
+#back4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(255, 250, 250, 0.705);
+}
+
+#head{
+    font-size: 40px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(39, 39, 39);
+}
+
+#chgc{
+    color: rgba(43, 153, 161, 0.842);
+}
+
+#icons{
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    /* background-color: teal; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.it{
+   margin-top: 10px;
+   font-family: 'Barlow Semi Condensed', sans-serif;
+   font-size: 20px;
+   color: rgba(43, 153, 161, 0.842);
+   letter-spacing: 2px;
+}
+
+#icons h4{
+   margin-top: 8px;
+   font-family: 'Barlow Semi Condensed', sans-serif;
+   color: grey;
+   font-size: 14px;
+   letter-spacing: 2px;
+}
+
+#icons:hover{
+    cursor: pointer;
+}
+
+#i1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ich1:hover{
+    cursor: pointer;
+    transform: translate(0 , -10px);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s !important;
+}
+
+#ich2:hover{
+    cursor: pointer;
+    transform: translate(0 , -10px);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s !important;
+}
+
+#ich3:hover{
+    cursor: pointer;
+    transform: translate(0 , -10px);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s !important;
+}
+
+#ich4:hover{
+    cursor: pointer;
+    transform: translate(0 , -10px);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s !important;
+}
+
+
+#i2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#i3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#i4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#back5{
+    width: 100%;
+    height: 90%;
+    background-image: url(https://images.unsplash.com/photo-1492133969098-09ba49699f47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+#overlay2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.329);
+    color: rgba(255, 250, 250, 0.705);
+    font-family:'Barlow Semi Condensed', sans-serif ;
+}
+
+#b41{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+ 
+#b42{
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+
